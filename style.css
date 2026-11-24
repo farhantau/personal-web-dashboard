@@ -1,0 +1,214 @@
+body {
+    background-image: url(campus.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-container {
+    width: 100%;
+    margin: 0;
+    background-color: #198754
+}
+
+.navbar-container-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    color: white;
+}
+
+.navbar-container-brand svg {
+    margin-left: 10px;
+    width: 26px;
+    height: 26px;
+}
+
+.navbar-container-brand h2 {
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.main-content {
+    width: 88%;
+    margin: 30px auto;
+}
+
+.siswa-card {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.card-header h2 {
+    color: #0d6efd;
+    font-size: 23px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ced4da;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.search-box i {
+    padding: 12px 15px;
+    color: #555;
+    border-right: 1px solid #ced4da;
+}
+
+.search-box input {
+    width: 310px;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.siswa-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.siswa-table th {
+    background-color: #f8f9fa;
+    padding: 14px;
+    font-size: 18px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.siswa-table td {
+    padding: 13px;
+    font-size: 17px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.siswa-table tbody tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+.siswa-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.siswa-table td:nth-child(2) {
+    text-align: left;
+    font-weight: 600;
+}
+
+.class-badge {
+    background-color: #6c757d;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.score-badge {
+    display: inline-block;
+    min-width: 38px;
+    padding: 4px 9px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: white;
+}
+
+.score-high {
+    background-color: #198754;
+}
+
+.score-medium {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.score-low {
+    background-color: #dc3545;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-top: 1px solid #dee2e6;
+}
+
+.card-footer span {
+    color: #6c757d;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-footer strong {
+    background-color: #0d6efd;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 7px;
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+
+    .main-content {
+        width: 95%;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .siswa-table th,
+    .siswa-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .card-footer {
+        flex-wrap: wrap;
+    }
+}

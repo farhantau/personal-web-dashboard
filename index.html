@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahasiswa Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>   
+    <!-- NAVBAR AREA -->
+     <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-container-brand">
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                     width="27"
+                     height="27"
+                     viewBox="0 0 24 24"
+                     fill="currentColor">
+                    <path d="M12 3L1 8.5L12 14L21 9.5V16H23V8.5L12 3ZM5 11.2V16.5C5 18.2 8.1 20 12 20C15.9 20 19 18.2 19 16.5V11.2L12 14.7L5 11.2Z"/>
+                </svg>
+                <h2>Mahasiswa Dashboard</h2>
+            </div>
+        </div>
+     </nav>
+     <!-- AREA BODY -->
+<main class="main-content">
+    <section class="siswa-card">
+        <div class="card-header">
+            <h2>Daftar Nilai Mahasiswa</h2>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Cari nama Mahasiswa..."
+                >
+            </div>
+
+        </div>
+        <div class="table-responsive">
+            <table class="siswa-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Mahasiswa</th>
+                        <th>Jurusan</th>
+                        <th>Kelas</th>
+                        <th>Nilai (Score)</th>
+                    </tr>
+                </thead>
+                <tbody id="siswaTableBody">
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer">
+            <span>Rata-rata Nilai Kelas:</span>
+            <strong id="averageScore">0</strong>
+        </div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
